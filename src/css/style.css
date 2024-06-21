@@ -42,7 +42,12 @@
   --bg-secondary-two: #f4f4f4;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
-
+button,img,a,i{
+  user-select: none;
+}
+.prevent-user-selection{
+  user-select: none;
+}
 html {
   font-size: 100%;
   scroll-behavior: smooth;
