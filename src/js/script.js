@@ -33,6 +33,15 @@ function switchTheme(e) {
   } 
 }
 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.documentElement.setAttribute("data-theme", "dark"); 
+  toggleSwitch.checked = true
+}
+else{
+  document.documentElement.setAttribute("data-theme", "light"); 
+
+}
+
 toggleSwitch.addEventListener("change", switchTheme, false);
 // Save user preference on load
 
